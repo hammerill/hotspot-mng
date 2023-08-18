@@ -14,7 +14,7 @@ def turn_airplane_mode(on=True, hotspot=True):
 
 # Check connection by pinging some address.
 def inet_connected():
-    p = subprocess.Popen(["ping", "-c1", config.HOST_TO_CHECK])
+    p = subprocess.Popen(["ping", "-c4", config.HOST_TO_CHECK])
     try:
         res = p.wait(config.HOST_CHECK_TIMEOUT)
         if res == 0:
