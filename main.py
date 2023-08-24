@@ -24,6 +24,7 @@ def step():
 
 
 
+system.turn_airplane_mode(False, config.RELAUNCH_HOTSPOT)
 while True:
     step()
     time.sleep(config.INET_PERIOD)
